@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "@nebulae/event-store-tpi-rx6@1.1.2",
+      "@nebulae/event-store-tpi-rx6@1.1.3",
       "/Users/sebastianmolano/NebulaE/Projects/TPI_LEGACY/ms-service/backend/service-core"
     ]
   ],
-  "_from": "@nebulae/event-store-tpi-rx6@1.1.2",
+  "_from": "@nebulae/event-store-tpi-rx6@1.1.3",
   "_id": "@nebulae/event-store-tpi-rx6@1.1.3",
   "_inBundle": false,
   "_integrity": "sha512-HrV+dbSFQ/C9AC0cpKz3k8cHMSrkMDBmDVqpM2P/en+WRMw6mPNVxNbcwTkCCZxXDxli/oFXBXQKmSpdi6LPGw==",
@@ -14,7 +14,7 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@nebulae/event-store-tpi-rx6@1.1.2",
+    "raw": "@nebulae/event-store-tpi-rx6@1.1.3",
     "name": "@nebulae/event-store-tpi-rx6",
     "escapedName": "@nebulae%2fevent-store-tpi-rx6",
     "scope": "@nebulae",
