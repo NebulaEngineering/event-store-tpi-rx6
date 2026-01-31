@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      "@nebulae/event-store-tpi-rx6@1.1.2",
+      "/Users/sebastianmolano/NebulaE/Projects/TPI_LEGACY/ms-service/backend/service-core"
+    ]
+  ],
+  "_from": "@nebulae/event-store-tpi-rx6@1.1.2",
+  "_id": "@nebulae/event-store-tpi-rx6@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-HrV+dbSFQ/C9AC0cpKz3k8cHMSrkMDBmDVqpM2P/en+WRMw6mPNVxNbcwTkCCZxXDxli/oFXBXQKmSpdi6LPGw==",
+  "_location": "/@nebulae/event-store-tpi-rx6",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@nebulae/event-store-tpi-rx6@1.1.2",
+    "name": "@nebulae/event-store-tpi-rx6",
+    "escapedName": "@nebulae%2fevent-store-tpi-rx6",
+    "scope": "@nebulae",
+    "rawSpec": "1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "1.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@nebulae/event-store-tpi-rx6/-/event-store-tpi-rx6-1.1.2.tgz",
+  "_spec": "1.1.2",
+  "_where": "/Users/sebastianmolano/NebulaE/Projects/TPI_LEGACY/ms-service/backend/service-core",
+  "author": {
+    "name": "sebastian.molano@nebulae.com.co"
+  },
+  "bugs": {
+    "url": "https://github.com/NebulaEngineering/event-store-tpi-rx6/issues"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.18.0",
+    "async-mqtt": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "mongodb": "^3.0.5",
+    "rxjs": "^6.3.3",
+    "uuid": "^3.2.1"
+  },
+  "description": "Event Store Lib for NebulaE Microservices",
+  "devDependencies": {
+    "array-intersection": "^0.1.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  },
+  "homepage": "https://github.com/NebulaEngineering/event-store-tpi-rx6#readme",
+  "keywords": [
+    "EventSourcing",
+    "EventStore",
+    "MicroServices"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@nebulae/event-store-tpi-rx6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NebulaEngineering/event-store-tpi-rx6.git"
+  },
+  "scripts": {
+    "test": "mocha --recursive --reporter spec"
+  },
+  "version": "1.1.2"
+}
