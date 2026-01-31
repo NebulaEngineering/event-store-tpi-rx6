@@ -6,7 +6,7 @@
     ]
   ],
   "_from": "@nebulae/event-store-tpi-rx6@1.1.2",
-  "_id": "@nebulae/event-store-tpi-rx6@1.1.2",
+  "_id": "@nebulae/event-store-tpi-rx6@1.1.3",
   "_inBundle": false,
   "_integrity": "sha512-HrV+dbSFQ/C9AC0cpKz3k8cHMSrkMDBmDVqpM2P/en+WRMw6mPNVxNbcwTkCCZxXDxli/oFXBXQKmSpdi6LPGw==",
   "_location": "/@nebulae/event-store-tpi-rx6",
