@@ -35,7 +35,7 @@
     "url": "https://github.com/NebulaEngineering/event-store-tpi-rx6/issues"
   },
   "dependencies": {
-    "@google-cloud/pubsub": "^0.18.0",
+    "@google-cloud/pubsub": "2.19.4",
     "async-mqtt": "^1.0.1",
     "dotenv": "^5.0.1",
     "mongodb": "^3.0.5",
