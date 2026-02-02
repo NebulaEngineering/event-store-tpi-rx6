@@ -1,6 +1,8 @@
 // TEST LIBS
 const assert = require('assert');
 const Rx = require('rxjs');
+const { first, timeout } = require('rxjs/operators');
+const { PubSub } = require('@google-cloud/pubsub');
 
 //LIBS FOR TESTING
 const PubSubBroker = require('../../lib/broker/PubSubBroker');
@@ -20,10 +22,24 @@ let event = new Event(
 
 
 describe('PUBSUB BROKER', function () {
+    before(function () {
+        process.env.GOOGLE_CLOUD_PROJECT = process.env.GOOGLE_CLOUD_PROJECT || 'test-project';
+    });
+    before(function (done) {
+        if (!process.env.PUBSUB_EMULATOR_HOST) return done();
+        this.timeout(10000);
+        const pubsub = new PubSub();
+        const topicName = 'Test';
+        const subName = 'TestSubscription';
+        pubsub.createTopic(topicName)
+            .catch(() => null)
+            .then(() => pubsub.topic(topicName).createSubscription(subName))
+            .catch(() => null)
+            .then(() => done())
+            .catch(done);
+    });
     describe('Prepare pubsub broker', function () {
         it('instance PubSubBroker', function (done) {
-            //ENVIRONMENT VARS
-            process.env.GOOGLE_APPLICATION_CREDENTIALS = "/Users/sebastianmolano/NebulaE/Projects/TPM/gateway/etc/gcloud-service-key.json";
             const eventsTopic = 'Test';
             const eventsTopicSubscription = 'TestSubscription';
             broker = new PubSubBroker({ eventsTopic, eventsTopicSubscription });
@@ -107,6 +123,7 @@ describe('PUBSUB BROKER', function () {
     });
     describe('de-prepare PubSub broker', function () {
         it('stop PubSubBroker', function (done) {
+            this.timeout(5000);
             broker.stop$()
                 .subscribe(
                     (evt) => console.log(`stop PubSubBroker: ${evt}`),
